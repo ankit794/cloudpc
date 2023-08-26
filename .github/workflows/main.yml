@@ -1,0 +1,20 @@
+name: Cloud PC Script Workflow
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name if needed
+
+jobs:
+  run_cloudpc_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Cloud PC Script
+        run: |
+          # Replace this with the actual command to run your Cloud PC script
+          # For example:
+          # python cloud_pc_script.py
